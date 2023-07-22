@@ -6,6 +6,6 @@ const Screen = ({input}) => {
       {input}
     </div>
   )
-}
+};
 
 export default Screen;

@@ -6,6 +6,6 @@ const BotonClear = (props) => {
       Clear
     </div>
   )
-}
+};
 
 export default BotonClear;
