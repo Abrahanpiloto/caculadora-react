@@ -3,7 +3,7 @@ import Boton from "./componentes/Boton";
 import Screen from "./componentes/Screen";
 import BotonClear from "./componentes/BotonClear";
 import { useState } from "react";
-import {evaluate} from "mathjs";
+import {dot, evaluate} from "mathjs";
 
 function App() {
   
@@ -11,8 +11,27 @@ function App() {
 
   // funcion que muestra valores en el screen
   const agregarInput = valor => {
+    
+    
+    // let ultimoElemento = input[input.length - 1]; 
+
+   console.log(valor.includes("."))
+   
+   if(!input.includes(".")) {
     setInput(input + valor)
+   }
+  
+
+    //    if((ultimoElemento === "*" || ultimoElemento === "+" || ultimoElemento === "-" || ultimoElemento === "/" || ultimoElemento === ".") && !parseInt(valor)) return
+    // } 
+    // if( !parseInt(ultimoElemento) && !parseInt(valor) ) return 
   };
+
+  // const inputDecimal = (dot) => {
+  //   if(!value.includes(".")) {
+  //     setInput(input += ".")
+  //   }
+  // }
 
   // funcion que calcula el resultado en el screen
   const calculateResult = () => {
